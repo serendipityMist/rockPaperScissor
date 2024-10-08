@@ -61,7 +61,12 @@ html,body{
     margin: auto;
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
 }
+#winnerDeclaration .win,.currentPlayer{
+    color:purple;
+}
+
 h1{
     text-align: center;
 }
