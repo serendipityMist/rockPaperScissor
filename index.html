@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1><span id="rock"> Rock</span> - <span class="paper"> Paper</span>- <span class="scissor">Scissor</span></h1>
+    <div class="nameContainer">
+    <h2>Enter your name:</h2>
+    <input type="text" class="name"> <button class="getName" onclick="getPlayer()">Enter</button>
+    <h2>Current player is: <span class="currentPlayer"></span></h2>
+    </div>
+    <div id="playground">
+        <div class="aiTurn">
+            <h2>AI</h2>
+        </div>
+        <div class="humanChoice">
+            <h2>Human</h2>
+        </div>
+    </div>
+    <div id="winnerDeclaration">
+        <p>The winner is: <span class="win"></span>  </p>
+    </div>
+    <div class="chooseOptions">
+        <figure>
+        <img src="./rock.jpg" alt="rock" onclick="userChoice(0)">
+        <figcaption>Rock</figcaption>
+    </figure>
+    <figure>
+        <img src="./scissor.jpg" alt="Scissor" onclick="userChoice(1)">
+        <figcaption>Scissor</figcaption>
+    </figure>
+    <figure>
+        <img src="./paper.jpg" alt="paper" onclick="userChoice(2)">
+        <figcaption>Paper</figcaption>
+    </figure>
+       
+        
     
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
